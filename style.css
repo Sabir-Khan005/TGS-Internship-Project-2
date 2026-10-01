@@ -164,3 +164,68 @@ body {
     color: var(--primary-color);
     margin-bottom: 15px;
 }
+
+
+/* 4. Pricing */
+
+.pricing-card {
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.pricing-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-card.recommended {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+
+/* 5. Testimonials */
+
+.slider-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slider {
+    display: none;
+}
+
+.slider.active-slide {
+    display: block;
+}
+
+.slide p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 15px;
+}
