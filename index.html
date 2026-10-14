@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Clinic Page </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesom for Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- 1. Sticky Navigation -->
+    <header class="navbar">
+        <div class="logo"> My Clinic </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#sevices">Services</a></li>
+                <li><a href="#pricing">Packages</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <!-- 2. Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Your Health, Our Priority</h1>
+            <p>Providing world-class medical care with advanced technolgy and compassionate staff.</p>
+            <a href="#contact" class="cta-btn">Book an Appointment</a>
+        </div>
+    </section>
+    <!-- 3. Services Section -->
+    <section id="services" class="section">
+        <h2>Our Medical Services</h2>
+        <div class="grid-container">
+            <div class="card service-card">
+                <i class="fas fa-stethoscope"></i>
+                <h3>General Checkup</h3>
+                <p>Comprehensive health checkups for all ages.</p>
+            </div>
+            <div class="card service-card">
+                <i class="fas fa-tooth"></i>
+                <h3>Dental Care</h3>
+                <p>Expert dental treatments and regular cleanings.</p>
+            </div>
+            <div class="card service-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Cardiology</h3>
+                <p>Advanced heart care and diagnosis by specialists.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 4. Pricing Table (Health Packages) -->
+    <section id="pricing" class="section bg-light">
+        <h2>Health Checkup Packages</h2>
+        <div class="grid-container">
+            <div class="card pricing-card">
+                <h3>Basic</h3>
+                <div class="price">$49</div>
+                <ul>
+                    <li>General Consultation</li>
+                    <li>Blood Pressure Check</li>
+                    <li>BMI Calculation</li>
+                </ul>
+                <button class="cta-btn outline">Choose Plan</button>
+            </div>
+            <div class="card pricing-card recommended">
+                <div class="badge">Recommended</div>
+                <h3>Standard</h3>
+                <div class="price">$99</div>
+                <ul>
+                    <li>Basic Features</li>
+                    <li>Full Blood Test</li>
+                    <li>ECG Report</li>
+                    <li>Dietary Consultation</li>
+                </ul>
+                <button class="cta-btn">Choose Plan</button>
+            </div>
+            <div class="card pricing-card">
+                <h3>Premium</h3>
+                <div class="price">$199</div>
+                <ul>
+                    <li>Standard Features</li>
+                    <li>MRI Scan</li>
+                    <li>Specialist Review</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <button class="cta-btn outline">Choose Plan</button>
+            </div>
+        </div>
+    </section>
+    <!-- 5. Testimonials Slider -->
+    <section id="testimonials" class="section">
+        <h2>Patient Testimonials</h2>
+        <div class="slider-container">
+            <div class="slide active-slide">
+                <p>"The doctors at CarePlus are incredibly professional. Highly recommend!"</p>
+                <h4>Sarah L.</h4>
+            </div>
+            <div class="slide">
+                <p>"Very clean facility and polite staff. I got my reports on time."</p>
+                <h4>John D.</h4>
+            </div>
+            <div class="slide">
+                <p>"The recommended dental pachage saved me a lot of money."</p>
+                <h4>Emma W.</h4>
+            </div>
+            <div class="slider-controls">
+                <button id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button id="nexBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- 6. FAQ Accordion -->
+    <section id="faq" class="section bg-light">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">What are your clinic hours?<i fas fa-plus></i></div>
+                <div class="faq-answer">
+                    <p>We are open Monday to Saturday, from 8:00 AM to 8:00 PM.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you accept insurance?<i class="fas fa-plus"></i></div>
+                <div class="faq-answer">
+                    <p>Yes, we accept most major health insurance plans</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How can I book an appointment?<i class="fas fa-plus"></i></div>
+                <div class="faq-answer">
+                    <p>You can book online through our contact form or call us directly.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Are walk-ins allowed?<i class="fas fa-plus"></i></div>
+                <div class="faq-answer">
+                    <p>Yes, but we recommend booking an appointment to avoid waiting.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer telemedicine?<i class="fas fa-plus"></i></div>
+                <div class="faq-answer">
+                    <p>Yes, online consultations are available for certain specialists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 7. Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <select required>
+                    <option value="">Select Service...</option>
+                    <option value="general">General Checkup</option>
+                    <option value="dental">Dental</option>
+                    <option value="cardio">Cardiology</option>
+                </select>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+            <div class="map-container">
+                <!-- Embedded Google Map -->
+                <iframe src="https://mapcarta.com/N4464943200/Map" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- 8. Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>CarePlus Clinic</h3>
+                <p>123 Health Ave, Medical District<br>Phone: 0334-8851431</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#services">Services</a>
+                <a href="#pricing">Packages</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">$copy; 2026 CarePlus Clinic. All right reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
